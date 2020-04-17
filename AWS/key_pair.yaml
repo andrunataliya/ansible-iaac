@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create key pair using provided key_material
+    ec2_key:
+      name: bastion_host
+      region: us-east-1
+      # state: absent
+      key_material: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC15cglaLdRqmwss+wrtBDauAqT8MAM29Y7YYIZ7VxONGGEXAq8D5bUFWG/DfV/WVbwgtc83F+fbWBz4pI8EjDRbJswc7qx4d3T3AOKut80F1akrphv9uasNydcDPRXYD5LxPIbZo9JC5WuOwmqnO46axShCRvJ1C90U4IX94cg8gyU1Zw/1XVlBUPK7HUpiPVQ72l0qFE6vbdnFEapubSNyBUXNqQB99OnGulLI9+EqEZXW1vBLKu0DQCuW1kJriP6haIUewudy6Iy6nT5MpvcYcym2ExsrSd5EnTKGg9BWTJ/wWl+SggloCRtAC6RTW7PYpJ+Ki/4jJN2xKp/B97D centos@ansible-iaac-bastion'
