@@ -1,0 +1,29 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Create subnet for database server 1
+    ec2_vpc_subnet:
+      state: present
+      region: us-east-1
+      vpc_id: vpc-051d0efcfa8edea24
+      cidr: 10.0.1.0/24
+
+
+- hosts: localhost
+  tasks:
+  - name: Create subnet for database server 1
+    ec2_vpc_subnet:
+      state: present
+      region: us-east-1
+      vpc_id: vpc-051d0efcfa8edea24
+      cidr: 10.0.2.0/24
+
+
+- hosts: localhost
+  tasks:
+  - name: Create subnet for database server 1
+    ec2_vpc_subnet:
+      state: present
+      region: us-east-1
+      vpc_id: vpc-051d0efcfa8edea24
+      cidr: 10.0.3.0/24
